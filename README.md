@@ -10,17 +10,6 @@ Terraform module which creates Spanner INSTANCE resources on GCP.
 locals {
   name    = "quarks-labs"
   project = "quarks-labs"
-  region  = "us-east1"
-}
-
-provider "google" {
-  project = local.project
-  region  = local.region
-}
-
-locals {
-  name    = "quarks-labs"
-  project = "quarks-labs"
   region  = "regional-us-east5"
 }
 
