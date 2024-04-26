@@ -19,8 +19,8 @@ provider "google" {
 }
 
 locals {
-  name    = "zamp-pocs"
-  project = "zamp-pocs"
+  name    = "quarks-pocs"
+  project = "quarks-pocs"
   region  = "regional-us-east5"
 }
 
@@ -36,7 +36,7 @@ module "spanner_instance" {
   name             = local.name
   processing_units = 900
   databases = [{
-    name                     = "zamp-pocs"
+    name                     = "quarks-pocs"
     ddl                      = []
     deletion_protection      = false
     enable_drop_protection   = false

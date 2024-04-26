@@ -16,7 +16,7 @@ module "spanner_instance" {
   name             = local.name
   processing_units = 900
   databases = [{
-    name                     = "zamp-pocs"
+    name                     = "quarks-pocs"
     ddl                      = []
     deletion_protection      = false
     enable_drop_protection   = false
