@@ -1,6 +1,6 @@
 locals {
-  name    = "quarks-pocs"
-  project = "quarks-pocs"
+  name    = "quarks-labs"
+  project = "quarks-labs"
   region  = "regional-us-east5"
 }
 
@@ -16,7 +16,7 @@ module "spanner_instance" {
   name             = local.name
   processing_units = 900
   databases = [{
-    name                     = "quarks-pocs"
+    name                     = "quarks-labs"
     ddl                      = []
     deletion_protection      = false
     enable_drop_protection   = false
